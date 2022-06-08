@@ -15,11 +15,13 @@
         <summary type="html"><![CDATA[Brobot is now live!]]></summary>
         <content type="html"><![CDATA[<p>Brobot is now live!  </p><p>For questions about how to use Brobot please use StackOverflow. I will be
 checking StackOverflow frequently for questions on Brobot.  </p><p>To point out errors in the code base or areas for improvement, please write to
-me directly in <a href="https://twitter.com/brobotJosh">Twitter</a> or submit a pull request in
-<a href="https://github.com/jspinak/brobot">Git</a>.</p>]]></content>
+me directly in <a href="https://twitter.com/brobotJosh" target="_blank" rel="noopener noreferrer">Twitter</a> or submit a pull request in
+<a href="https://github.com/jspinak/brobot" target="_blank" rel="noopener noreferrer">Git</a>.</p>]]></content>
         <author>
             <name>Joshua Spinak</name>
             <uri>https://github.com/jspinak</uri>
         </author>
+        <category label="hello" term="hello"/>
+        <category label="brobot" term="brobot"/>
     </entry>
 </feed>

@@ -7,6 +7,7 @@
         <lastBuildDate>Tue, 18 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://jspinak.github.io/brobot/blog/welcome</link>
@@ -15,8 +16,10 @@
             <description><![CDATA[Brobot is now live!]]></description>
             <content:encoded><![CDATA[<p>Brobot is now live!  </p><p>For questions about how to use Brobot please use StackOverflow. I will be
 checking StackOverflow frequently for questions on Brobot.  </p><p>To point out errors in the code base or areas for improvement, please write to
-me directly in <a href="https://twitter.com/brobotJosh">Twitter</a> or submit a pull request in
-<a href="https://github.com/jspinak/brobot">Git</a>.</p>]]></content:encoded>
+me directly in <a href="https://twitter.com/brobotJosh" target="_blank" rel="noopener noreferrer">Twitter</a> or submit a pull request in
+<a href="https://github.com/jspinak/brobot" target="_blank" rel="noopener noreferrer">Git</a>.</p>]]></content:encoded>
+            <category>hello</category>
+            <category>brobot</category>
         </item>
     </channel>
 </rss>

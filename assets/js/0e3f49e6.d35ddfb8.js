@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[498],{9026:function(o){o.exports=JSON.parse('{"allTagsPath":"/brobot/blog/tags","slug":"/brobot/blog/tags/brobot","name":"brobot","count":1,"permalink":"/brobot/blog/tags/brobot"}')}}]);
