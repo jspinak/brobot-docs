@@ -56,8 +56,8 @@ public class CaptureScenesAndInputs {
      * @param actionOptions
      * @param stateImageObjects
      */
-    public void captureAndFindObjects(ActionOptions actionOptions, StateImageObject... stateImageObjects) {
-        capture();
+    public void captureAndFindObjects(String stateName, ActionOptions actionOptions, StateImageObject... stateImageObjects) {
+        capture(stateName);
         SceneObjectCollectionForXML sceneObjectCollectionForXML = findObjects(actionOptions, stateImageObjects);
         saveSceneObjectCollectionForXML(sceneObjectCollectionForXML);
         System.runFinalization();
@@ -74,8 +74,11 @@ public class CaptureScenesAndInputs {
 
     /**
      * Takes and saves screenshots repeatedly in the folder 'capture'.
+     * The state name is saved in the filename, and all screenshots taken should be in the same state, unless
+     * a generic state name is given such as "scene". The screenshots can be used later to establish a state profile,
+     * most likely using a median histogram. The live state then can be identified with a simple histogram comparison.
      */
-    public void capture() {
+    public void capture(String stateName) {
         int numberOfScreenshots = (int) (BrobotSettings.secondsToCapture / BrobotSettings.captureFrequency);
         nativeHookDemo.start();
         int timelapse;
@@ -85,7 +88,7 @@ public class CaptureScenesAndInputs {
             if (timelapse > screensSaved * BrobotSettings.captureFrequency * 1000) {
                 try {
                     ImageIO.write(getImage.getBuffImgFromScreen(new Region()),
-                            "png", new File("capture/scene" + screensSaved + ".png"));
+                            "png", new File("capture/" + stateName + screensSaved + ".png"));
                     Report.println("Saved screenshot " + screensSaved);
                     screensSaved++;
                 } catch (IOException e) {
